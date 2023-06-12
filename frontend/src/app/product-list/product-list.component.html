@@ -1,0 +1,177 @@
+
+<!-- main section -->
+
+<div class="head"></div>
+<h3 class="title"> Latest <span style="color:rgb(165, 118, 16) ;">products</span>  </h3>
+<div id="carouselExampleCaptions"  class="carousel slide">
+
+  <div class="carousel-inner "  *ngFor="let product of getVisibleProducts()">
+    
+    <div   class="carousel-item active">
+      <img  [src]="product.image" class="d-block " alt="...">
+     
+    </div>
+      </div>
+</div>
+<!-- 4th -->
+
+
+<div class="container">
+ 
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+            <div class="i">
+              <button class="btn " (click)="toggleDescription(product)">i</button>
+              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+
+            </div>
+            <div class="card-body">
+              <div class="imagetop">
+                <img [src]="product.image" class="card-img-top" alt="..."> 
+
+              </div>
+              
+              <h4  class="card-title">{{ product.title }}</h4>
+             
+              
+              <!-- <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p> -->
+             <p style="color:red">price:${{product.price}}</p>
+             <p>category:{{product.category}}</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="cards-wrapper">
+          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+            <img [src]="product.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">{{ product.title }}</h4>
+              <button class="btn " (click)="toggleDescription(product)">Description</button>
+              
+              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" >
+        <div class="cards-wrapper">
+          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+            <img [src]="product.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">{{ product.title }}</h4>
+              <button class="btn " (click)="toggleDescription(product)">Description</button>
+              
+              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" >
+        <div class="cards-wrapper">
+          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+            <img [src]="product.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">{{ product.title }}</h4>
+              <button class="btn " (click)="toggleDescription(product)">Description</button>
+              
+              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" >
+        <div class="cards-wrapper">
+          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+            <img [src]="product.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.title }}</h5>
+              <button class="btn " (click)="toggleDescription(product)">Description</button>
+              
+              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Add more carousel items as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" (click)="showPreviousCards()">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+   
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" (click)="showNextCards()">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+ 
+  
+  
+ 
+</div>
+
+
+
+
+
+<!-- image slider -->
+
+
+<!-- 2nd -->
+
+
+
+
+<!-- social media -->
+
+<div class="wrapper">
+  <div class="button">
+    <div class="icon">
+      <a style="text-decoration: none; color: black;" href="https://facebook.com/"> <i class="fab fa-facebook"></i></a>
+      </div>
+    <span>Facebook</span>
+ </div>
+  
+<div class="button">
+  <div class="icon">
+    <a style="text-decoration: none; color: black;" href="https://twiter.com/"> <i class="fab fa-twitter"></i></a>
+    </div>
+  <span>Twitter</span>
+</div>
+ 
+   <div class="button">
+    <div class="icon">
+      <a style="text-decoration: none; color: black;" href="https://instagram.com/"> <i class="fab fa-instagram"></i></a>
+      </div>
+    <span>Instagram</span>
+ </div>
+
+ 
+ <div class="button">
+  <div class="icon">
+    <a style="text-decoration: none; color: black;" href="https://github.com/"> <i class="fab fa-github"></i></a>
+    </div>
+  <span>Github</span>
+</div>
+  
+<div class="button">
+  <div class="icon">
+    <a style="text-decoration: none; color: black;" href="https://youtube.com/"> <i class="fab fa-youtube"></i></a>
+    </div>
+  <span>Youtube</span>
+</div>
+  
+</div>
