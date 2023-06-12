@@ -44,3 +44,4 @@ This command will start both the server and the Angular development server concu
 - The project's server code is located in the **backend** directory, and the client-side code (Angular) is located in the **frontend** directory.
 ---
 `By running the project using Nodemon and ng serve concurrently, you can make changes to both the server-side and client-side code and see the updates immediately without manually restarting the server or refreshing the browser.`
+## [VIDEO LINK FOR WEBSITE](https://drive.google.com/file/d/18RivRYLRdZmdd_GoEzeu_XK77VC_hJoG/view?usp=drivesdk)
