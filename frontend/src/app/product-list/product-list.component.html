@@ -18,87 +18,97 @@
 
 <div class="container">
  
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="cards-wrapper">
-          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
-            <div class="i">
-              <button class="btn " (click)="toggleDescription(product)">i</button>
-              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
-
+      <div class="carousel-item active ">
+       
+            <div class="cards-wrapper">
+              <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+                <div class="i">
+                  <button class="btn " (click)="toggleDescription(product)">i</button>
+                  <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+    
+                </div>
+                <div class="card-body">
+                  <div class="imagetop">
+                    <img [src]="product.image" class="card-img-top" alt="..."> 
+    
+                  </div>
+                  
+                  <h4  class="card-title">{{ product.title }}</h4>
+                 
+                  
+                  <!-- <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p> -->
+                 <p style="color:red">price:${{product.price}}</p>
+                 <p>category:{{product.category}}</p>
+        
+        
+            
             </div>
-            <div class="card-body">
-              <div class="imagetop">
-                <img [src]="product.image" class="card-img-top" alt="..."> 
-
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item " >
+        
+            <div class="cards-wrapper">
+              <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+                <img [src]="product.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">{{ product.title }}</h4>
+                  <button class="btn " (click)="toggleDescription(product)">Description</button>
+                  
+                  <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+                 
               </div>
-              
-              <h4  class="card-title">{{ product.title }}</h4>
-             
-              
-              <!-- <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p> -->
-             <p style="color:red">price:${{product.price}}</p>
-             <p>category:{{product.category}}</p>
-            
-            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item" >
-        <div class="cards-wrapper">
-          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
-            <img [src]="product.image" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">{{ product.title }}</h4>
-              <button class="btn " (click)="toggleDescription(product)">Description</button>
-              
-              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
-             
-            </div>
+      <div class="carousel-item " >
+       
+            <div class="cards-wrapper">
+              <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+                <img [src]="product.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">{{ product.title }}</h4>
+                  <button class="btn " (click)="toggleDescription(product)">Description</button>
+                  
+                  <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+               
+        
           </div>
-        </div>
-      </div>
-      <div class="carousel-item" >
-        <div class="cards-wrapper">
-          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
-            <img [src]="product.image" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">{{ product.title }}</h4>
-              <button class="btn " (click)="toggleDescription(product)">Description</button>
-              
-              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
-           
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="carousel-item" >
-        <div class="cards-wrapper">
-          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
-            <img [src]="product.image" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h4 class="card-title">{{ product.title }}</h4>
-              <button class="btn " (click)="toggleDescription(product)">Description</button>
-              
-              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
-              
-            </div>
+      <div class="carousel-item " >
+       
+            <div class="cards-wrapper">
+              <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+                <img [src]="product.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">{{ product.title }}</h4>
+                  <button class="btn " (click)="toggleDescription(product)">Description</button>
+                  
+                  <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+        
+       </div>
           </div>
         </div>
       </div>
 
-      <div class="carousel-item" >
-        <div class="cards-wrapper">
-          <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
-            <img [src]="product.image" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{ product.title }}</h5>
-              <button class="btn " (click)="toggleDescription(product)">Description</button>
-              
-              <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
-            
+      <div class="carousel-item " >
+        
+            <div class="cards-wrapper">
+              <div class="card d-none d-md-block" *ngFor="let product of getVisibleProducts()">
+                <img [src]="product.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ product.title }}</h5>
+                  <button class="btn " (click)="toggleDescription(product)">Description</button>
+                  
+                  <p class="card-text" *ngIf="product.showDescription">{{ product.description }}</p>
+                
+        
+        
             </div>
           </div>
         </div>
